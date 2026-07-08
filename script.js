@@ -71,3 +71,63 @@ faqQuestions.forEach((question) => {
     });
 
 });
+
+const copyButtons = document.querySelectorAll(".copy-button");
+
+copyButtons.forEach((button) => {
+
+    button.addEventListener("click", async () => {
+
+        const text = button.dataset.copy;
+
+        try{
+
+            await navigator.clipboard.writeText(text);
+
+            button.textContent = "✓ Copied";
+
+            button.classList.add("copied");
+
+            setTimeout(() => {
+
+                button.classList.remove("copied");
+
+                button.textContent = "Copy";
+
+            }, 1500);
+
+        }catch(error){
+
+            console.error(error);
+
+        }
+
+    });
+
+});
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    menuToggle.textContent =
+        navLinks.classList.contains("active")
+        ? "✕"
+        : "☰";
+
+});
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        menuToggle.textContent = "☰";
+
+    });
+
+});

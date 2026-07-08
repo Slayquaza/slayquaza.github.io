@@ -238,6 +238,20 @@ nav a:hover::after{
     width:100%;
 }
 
+/* ---------- Shared ---------- */
+
+.section-description{
+
+    color:#A9A9A9;
+
+    margin-bottom:40px;
+
+    max-width:600px;
+
+    line-height:1.7;
+
+}
+
 /* ---------- Portfolio ---------- */
 
 .portfolio{

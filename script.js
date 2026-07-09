@@ -11,7 +11,7 @@ artworks.forEach((artwork) => {
         console.log("clicked");
         lightbox.classList.add("active");
 
-        lightboxImage.src = artwork.src;
+        lightboxImage.src = artwork.dataset.full;
 
     });
 
@@ -127,6 +127,28 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
         navLinks.classList.remove("active");
 
         menuToggle.textContent = "☰";
+
+    });
+
+});
+
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach(item => {
+
+    const header = item.querySelector(".accordion-header");
+
+    header.addEventListener("click", () => {
+
+        item.classList.toggle("active");
+
+        const content = item.querySelector(".accordion-content");
+
+        if (item.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+            content.style.maxHeight = null;
+        }
 
     });
 

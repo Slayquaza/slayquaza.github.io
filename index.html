@@ -4,9 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squaza</title>
+    <title>SLAYQUAZA | Character Illustrator & Digital Artist</title>
+    <meta
+    name="description"
+    content="Portfolio of SLAYQUAZA, a digital character illustrator specializing in stylized original characters, fanart, and polished illustrations. Open for commissions.">
+    <meta name="theme-color" content="#111111">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        rel="preload"
+        as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    </noscript>
+    <link
+    rel="preload"
+    as="image"
+    href="images/hero.webp"
+    fetchpriority="high">
     <link rel="stylesheet" href="style.css">
+    
+    
 </head>
 
 <body>
@@ -16,7 +41,7 @@
         <nav>
 
             <div class="logo">
-                SQUAZA
+                SLAYQUAZA
             </div>
 
             <ul class="nav-links">
@@ -57,7 +82,11 @@
             </div>
 
             <div class="hero-image">
-                <img src="images/hero.png" alt="Featured Artwork">
+                <img
+                    class="hero-image"
+                    src="images/hero.webp"
+                    alt="Featured artwork"
+                    fetchpriority="high">
             </div>
 
         </main>
@@ -68,47 +97,82 @@
 
             <div class="gallery">
 
-                <div class="artwork featured">
-                    <img src="images/artwork1.png" alt="">
-                    <div class="artwork-overlay">
-                        <h3>Talia Yang</h3>
-                        <p>Cyberpunk: Edgerunners • 2026</p>
-                    </div>
-                </div>
+    <div class="artwork featured">
+        <img
+            src="images/artwork1.webp"
+            data-full="images/artwork1-full.webp"
+            alt="Digital illustration of Talia Yang from Cyberpunk: Edgerunners."
+            loading="lazy"
+            decoding="async"
+            width="1000"
+            height="1304">
+        <div class="artwork-overlay">
+            <h3>Talia Yang</h3>
+            <p>Cyberpunk: Edgerunners • 2026</p>
+        </div>
+    </div>
 
-                <div class="artwork">
-                    <img src="images/artwork2.png" alt="">
-                    <div class="artwork-overlay">
-                        <h3>Lucy</h3>
-                        <p>Cyberpunk: Edgerunners • 2022</p>
-                    </div>
-                </div>
+    <div class="artwork">
+        <img
+            src="images/artwork2.webp"
+            data-full="images/artwork2-full.webp"
+            alt="Digital illustration of Lucy from Cyberpunk: Edgerunners."
+            loading="lazy"
+            decoding="async"
+            width="1000"
+            height="1429">
+        <div class="artwork-overlay">
+            <h3>Lucy</h3>
+            <p>Cyberpunk: Edgerunners • 2022</p>
+        </div>
+    </div>
 
-                <div class="artwork">
-                    <img src="images/artwork3.png" alt="">
-                    <div class="artwork-overlay">
-                        <h3>Wattson</h3>
-                        <p>Apex Legends • 2022</p>
-                    </div>
-                </div>
+    <div class="artwork">
+        <img
+            src="images/artwork3.webp"
+            data-full="images/artwork3-full.webp"
+            alt="Digital illustration of Wattson from Apex Legends."
+            loading="lazy"
+            decoding="async"
+            width="1000"
+            height="1429">
+        <div class="artwork-overlay">
+            <h3>Wattson</h3>
+            <p>Apex Legends • 2022</p>
+        </div>
+    </div>
 
-                <div class="artwork">
-                    <img src="images/artwork4.png" alt="">
-                    <div class="artwork-overlay">
-                        <h3>Misaki Satomi</h3>
-                        <p>Original Character · @YodaOfSoda • 2026</p>
-                    </div>
-                </div>
+    <div class="artwork">
+        <img
+            src="images/artwork4.webp"
+            data-full="images/artwork4-full.webp"
+            alt="Digital illustration of the original character Misaki Satomi."
+            loading="lazy"
+            decoding="async"
+            width="1000"
+            height="1304">
+        <div class="artwork-overlay">
+            <h3>Misaki Satomi</h3>
+            <p>Original Character · @YodaOfSoda • 2026</p>
+        </div>
+    </div>
 
-                <div class="artwork">
-                    <img src="images/artwork5.png" alt="">
-                    <div class="artwork-overlay">
-                        <h3>Solaris</h3>
-                        <p>Original Character • 2026</p>
-                    </div>
-                </div>
+    <div class="artwork">
+        <img
+            src="images/artwork5.webp"
+            data-full="images/artwork5-full.webp"
+            alt="Digital illustration of the original character Solaris."
+            loading="lazy"
+            decoding="async"
+            width="1000"
+            height="1304">
+        <div class="artwork-overlay">
+            <h3>Solaris</h3>
+            <p>Original Character • 2026</p>
+        </div>
+    </div>
 
-            </div>
+</div>
 
         </section>
 
@@ -139,6 +203,187 @@
                 </div>
 
             </div>
+            <h3 class="commission-info-title">Commission Guidelines</h3>
+
+<div class="accordion">
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <span>Commission Process</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <p>1. Contact me with your idea and any references.</p>
+                <p>2. We'll discuss the commission details and make sure we're on the same page.</p>
+                <p>3. I'll create a sketch for your approval.</p>
+                <p>4. Once the sketch has been approved, payment is due (unless otherwise agreed).</p>
+                <p>5. I'll begin rendering the artwork and keep you updated throughout the process.</p>
+                <p>6. The finished artwork will be delivered digitally in full resolution.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <span>References</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <p>
+                    Visual references are highly encouraged. They don't have to be a single, complete reference sheet—multiple images are perfectly fine. Feel free to combine references for hairstyles, outfits, colors, poses, accessories, expressions, or anything else that helps communicate your idea.
+                </p>
+
+                <p>
+                    The more visual information you provide, the better I can bring your vision to life.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <span>Revisions</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <p>
+                You'll receive a sketch for approval before rendering begins.
+                </p>
+
+                <p>
+                    Reasonable revisions are included during the sketch stage.
+                </p>
+
+                <p>
+                    Once the sketch has been approved, only minor revisions are included. Significant changes after rendering has begun may require an additional fee.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <span>Payment</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <p>
+                    Payment is due after the sketch has been approved, unless otherwise agreed.
+                </p>
+
+                <p>
+                    Payment methods will be added here once they have been finalized.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <span>Terms of Service</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <ul>
+                    <li>I reserve the right to decline any commission for any reason.</li>
+                    <li>Clear communication and visual references are highly encouraged throughout the commission process.</li>
+                    <li>All artwork will be created in my own style.</li>
+                    <li>Commercial usage must be discussed and agreed upon before work begins. Additional licensing fees may apply.</li>
+                    <li>Work on the final rendering will begin once payment has been received.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+    <button class="accordion-header">
+        <span>Usage Rights</span>
+        <span class="accordion-icon">+</span>
+    </button>
+
+    <div class="accordion-content">
+        <div class="accordion-body">
+
+            <ul>
+                <li>I retain the copyright to all commissioned artwork.</li>
+                <li>I may display commissioned artwork in my portfolio and on social media unless requested otherwise.</li>
+                <li>You may share the artwork online for personal use, non-commercial use. Credit is appreciated whenever possible.</li>
+                <li>Commercial usage must be discussed and agreed upon before work begins.</li>
+                <li>The artwork may not be used for AI training, NFTs, or resold without my explicit permission.</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <span>Content Guidelines</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="draw-list">
+
+    <div>
+        <h4>Will Draw</h4>
+        <ul>
+            <li>Original Characters (OCs)</li>
+            <li>Fan Art</li>
+            <li>Portraits</li>
+            <li>Half Body</li>
+            <li>Full Body</li>
+            <li>Humanoid Characters</li>
+            <li>Kemonomimi (animal ears, tails, horns, etc.)</li>
+            <li>Simple Backgrounds</li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Won't Draw</h4>
+        <ul>
+            <li>NSFW / Explicit Content</li>
+            <li>Full Furry / Anthro Characters</li>
+            <li>Mecha (for now)</li>
+            <li>Extreme Gore</li>
+            <li>Hate or Discriminatory Content</li>
+            <li>NFT or AI Training Requests</li>
+        </ul>
+    </div>
+
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <span>Cancellation</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <p>
+                    Either party may cancel the commission before rendering begins.
+                </p>
+
+                <p>
+                    If I cancel the commission after payment has been made, a full refund will be provided.
+                </p>
+
+                <p>
+                    If the client cancels after rendering has begun, any refund will be based on the amount of work completed.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
 
         </section>
 
@@ -197,6 +442,7 @@
     </div>
 
 </div>
+ </section>
 
 <section id="about" class="about">
 
@@ -305,7 +551,7 @@
 
         <footer>
 
-            <p>© 2026 Squaza. All rights reserved.</p>
+            <p>© 2026 Slayquaza. All rights reserved.</p>
 
         </footer>
 

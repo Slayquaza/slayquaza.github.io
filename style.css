@@ -354,6 +354,31 @@ nav a:hover::after{
 
 }
 
+.pricing-info {
+    margin-top: 2.5rem;
+}
+
+.pricing-info p:first-child {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.pricing-info ul {
+    margin-bottom: 1.5rem;
+}
+
+.pricing-info li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.pricing-info p:last-child {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
 /* ---------- Commission Accordion ---------- */
 
 .commission-info-title{
